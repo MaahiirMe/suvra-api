@@ -1,0 +1,44 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Suvra - Personal AI Assistant",
+    "version": "1.0.0",
+    "description": "Suvra is your emotional and professional support AI companion."
+  },
+  "paths": {
+    "/motivate": {
+      "get": {
+        "summary": "Get a motivational message",
+        "responses": {
+          "200": {
+            "description": "A motivational message",
+            "content": {
+              "application/json": {
+                "example": {
+                  "message": "You\u2019ve got this! Let\u2019s take one step at a time."
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/corporateTips": {
+      "get": {
+        "summary": "Get a professional corporate tip",
+        "responses": {
+          "200": {
+            "description": "A useful career or workplace tip",
+            "content": {
+              "application/json": {
+                "example": {
+                  "tip": "Always align your communication with your team\u2019s goals for clarity and efficiency."
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
